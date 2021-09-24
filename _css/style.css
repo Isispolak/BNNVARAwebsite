@@ -1,0 +1,75 @@
+
+header {
+    
+}
+body {
+    margin:0px;
+}
+h2 {
+    font-family: 'Exo', sans-serif;
+    font-size: 26px;
+}
+
+p {
+    font-family: 'Exo', sans-serif;
+}
+ul {
+    display: flex;
+    list-style-type:none;
+    justify-content: flex-end;
+    position:relative;
+    top:1em;
+}
+
+nav {
+    background-color: black;
+    padding-bottom: 0.8em;
+}
+
+nav p {
+color:white;
+}
+
+nav img {
+    height: 2em;
+    width: 2em;
+}
+
+#bnnvaralogo {
+position: absolute;
+left: 1em;
+}
+
+#menu{
+    position:absolute;
+    left:8%;
+    font-size: 1.5em;
+    bottom: 0.01em;
+}
+
+header article img {
+    width:100%;
+    
+}
+
+/* #sluitjeaanbijbnnvara {
+display:flex;
+} */
+
+#sluitjeaanbijbnnvara img {
+width: 100%;
+/* width: 35,5em;
+height:19,9em; */
+}
+
+/* @media (max-width:375px) {
+    h2 {
+        font-size: 26px;
+    }
+} */
+
+
+
+
+
+
