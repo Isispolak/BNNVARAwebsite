@@ -80,7 +80,7 @@ main>div:first-child img {
     object-fit:cover;
 }
 
-div div {
+div:first-of-type div {
     position:absolute;
     top:450;
     padding-left: 1em;
@@ -98,7 +98,7 @@ div div {
 /*BUTT0NS/
 /***************/
 
-button:first-of-type {
+div div button:first-of-type {
 background-color: #E60000;
 color:white;
 font-family: 'Exo', sans-serif;
@@ -109,7 +109,7 @@ font-size:1em;
 margin-right: 0.6em;
 }
 
-button:nth-of-type(2) {
+div div button:nth-of-type(2) {
     background-color:white;
     color:black;
     font-family: 'Exo', sans-serif;
@@ -118,6 +118,75 @@ button:nth-of-type(2) {
     padding: 0.56em 1.4em;
     font-size:1em;
     }
+
+/***************/
+/*CAROUSSEL*/
+/***************/
+
+section:first-of-type {
+    background-color: #1f1f1f;
+    overflow: hidden;
+    padding: 1.5em 1em 2.5em;
+    margin-top:2em;
+}
+
+section:first-of-type h2 {
+    margin:0;
+    margin-bottom: 1em;
+    color: white;
+}
+
+section:first-of-type article{
+    margin-right:0.8em;
+}
+
+section:first-of-type div {
+    display: flex;
+}
+
+section:first-of-type article {
+    background-color: white;
+} 
+
+section:first-of-type img {
+    width: 168px;
+    height:95px;
+}
+
+section:first-of-type h3 {
+    font-size: 1em;
+    font-weight:normal;
+}
+
+/* button:nth-of-type(2),button:nth-of-type(1) {
+    background-color: #E60000;
+    width: 1.5em;
+    height: 3em;
+ } */
+
+div:nth-of-type(4) {
+    position:relative;
+}
+
+ #terug, #volgende {
+    background-color: #E60000;
+    width: 1.5em;
+    height: 3em;
+    border:none;
+    position: relative;
+    bottom: 130;
+ }
+
+ #terug img, #volgende img {
+    width: 1em;
+    height: 1em;
+    border:none;
+ }
+
+ #volgende {
+     left:330;
+ }
+
 
 /***************/
 /*EERSTE SECTION(SLUITJEAANBIJBNNVARA)*/
@@ -177,13 +246,13 @@ padding:2.5em;
 /*ARTIKELEN*/
 /***************/
 
-section:nth-of-type(2) img {
+section:nth-of-type(3) img {
     height:6em;
     width:7em;
     position:relative;
     } 
 
-section:nth-of-type(2) article {
+section:nth-of-type(3) article {
     display:flex;
     background-color:white;
     margin-bottom: 1.3em;
@@ -202,7 +271,7 @@ h3 {
 
 @media (min-width:48.1rem) 
 {
-    section:nth-of-type(2){
+    section:nth-of-type(3){
         display:grid;
         grid-template-columns: 1fr 1fr;
         background:none;
@@ -210,19 +279,19 @@ h3 {
         margin:40px;
     }
 
-    section:nth-of-type(2) h2 {
+    section:nth-of-type(3) h2 {
         grid-column: 1/ -1;
         font-size: 2.5em;
         margin:0;
         margin-left:12px;
     }
 
-    section:nth-of-type(2) article{
+    section:nth-of-type(3) article{
     background:none;
     position:relative;
     }
 
-    section:nth-of-type(2) img {
+    section:nth-of-type(3) img {
         width:100%;
         height:324px;
         /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)); Hoe werkt dit met ::after?! */ 
@@ -231,7 +300,7 @@ h3 {
         border-radius: 5.5px;
     }
 
-h3 {
+    section:nth-of-type(3) h3 {
     position:absolute;
     font-size:1.25em;
     inset:30px 30px;
@@ -246,7 +315,7 @@ h3 {
 
 @media (min-width:63.75rem) {
 
-section:nth-of-type(2){
+section:nth-of-type(3){
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background:none;
@@ -255,19 +324,19 @@ section:nth-of-type(2){
     margin:0px;
 }
 
-section:nth-of-type(2) h2 {
+section:nth-of-type(3) h2 {
     grid-column: 1/ -1;
     font-size: 2.5em;
     margin:0;
     padding-left:22px;
 }
 
-section:nth-of-type(2) article{
+section:nth-of-type(3) article{
 background:none;
 position:relative;
 }
 
-section:nth-of-type(2) img {
+section:nth-of-type(3) img {
     width:100%;
     height:320px;
     /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)); Hoe werkt dit met ::after?! */ 
@@ -276,7 +345,7 @@ section:nth-of-type(2) img {
     border-radius:0.5em;
 }
 
-h3 {
+section:nth-of-type(3) h3 {
 position:absolute;
 font-size:1.25em;
 inset:0px 30px;
@@ -553,7 +622,7 @@ margin: 1.8em 0em 1.8em 0em;
 #artikel article a:first-of-type,  
 #artikel article li:first-of-type
 {
-    padding-left:20%;
+padding-left:20%;
 }
 
 #artikel article h1 {
