@@ -2,18 +2,18 @@
 <head><meta charset=""UTF-8>
 <title>homepagina</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel='stylesheet' href=_css/style.css>
+<link rel='stylesheet' href=../css/style.css>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;800&display=swap" rel="stylesheet">
 </head>
-<body id="artikel">
+<body class="artikelpagina">
 <header>
     <nav>
         <ul>
             <li>
                 <a href="index.html">
-                    <img src="_img/bnnvaralogozondertekst.png" alt="bnnvaralogozondertekst">
+                    <img src="/_img/bnnvaralogozondertekst.png" alt="bnnvaralogozondertekst">
                 </a>
             </li>
             <li>
@@ -21,11 +21,11 @@
                     menu
                 </a>
                 </li>
-                    <li><img src="_img/zoekbalk_zoekbalk.png" alt="zoekbalk"></li>
-                <li><img src="_img/account_account.png" alt="account"></li>
-                <li><img src="_img/notificaties_notificaties.png" alt="notificaties"></li>
+                    <li><img src="/_img/zoekbalk_zoekbalk.png" alt="zoekbalk"></li>
+                <li><img src="/_img/account_account.png" alt="account"></li>
+                <li><img src="/_img/notificaties_notificaties.png" alt="notificaties"></li>
                <li><a href="https://www.npostart.nl/">
-                    <img src="_img/npologo.png"></a></li> 
+                    <img src="/_img/npologo.png"></a></li> 
         </ul>
     </nav>
 </header>
@@ -40,9 +40,9 @@
     </div>
 </div>
 
-<article>
+<article class="artikel">
 <h1>Wat zijn jullie ervaringen met woningstress?</h1>
-<a href="https://www.bnnvara.nl/rubrieken/geldclass=">Geld,</a>
+<a href="https://www.bnnvara.nl/rubrieken/geldclass=" class="eerstea">Geld,</a>
 <a href="https://www.bnnvara.nl/rubrieken/geldclass=">Zorgen</a>
 <ul>
     <li>16 Sep 2021</li>
@@ -50,11 +50,14 @@
     <li>464 keer bekeken</li>
 </ul>
 
-<img src="_img/artikelpagina/woningstressfoto.jpeg" alt="klein huis met daarnaast een sleutel" id="woningstressfoto">
-<!-- Ik gebruik hier een ID, omdat het programma om de een of andere reden de foto met het juichicoon meeneemt (zie screenshots) -->
+<img src="/_img/artikelpagina/woningstressfoto.jpeg" alt="klein huis met daarnaast een sleutel" class="woningstressfoto">
 
-<p> De grote krapte op de woningmarkt resulteert in onbetaalbare koopwoningen voor starters, 
-    hoge huren en lange wachtlijsten. Met kwalijke gevolgen, volgens jullie. 
+<!-- Aangezien een inleiding een belangrijk element is gebruik ik hier de strong tag. Deze is sematisch, als het in de juiste contex wordt gebruikt
+bron:: The Strong Importance element - HTML: HyperText Markup Language | MDN. (2021, 3 oktober). 
+MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong#b_vs._strong -->
+
+<p> <strong> grote krapte op de woningmarkt resulteert in onbetaalbare koopwoningen voor starters, 
+    hoge huren en lange wachtlijsten. Met kwalijke gevolgen, volgens jullie.</strong>
 </p>
 <p>  Wij vroegen jullie om jullie ervaringen te delen omtrent woningstress aan de hand van de volgende stelling: 
     'Ik maak mij zorgen om het vinden van een huis.' 
@@ -92,28 +95,25 @@ MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong#b
             maar kun je geen kleinere woning vinden? Of heb je een creatieve oplossing maar doet de gemeente moeilijk? 
             Mail je oplossing of idee naar <a href="mailto:kassa@bnnvara.nl">kassa@bnnvara.nl</a> en vermeld daarbij je naam en het telefoonnummer waar je overdag op bereikbaar bent.
         </p>
-        <div>
-            <p>Meer over:</p><a href="https://www.bnnvara.nl/tags/wonen"> wonen,</a>
+            <p>Meer over:<a href="https://www.bnnvara.nl/tags/wonen"> wonen,</a>
             <a href="https://www.bnnvara.nl/tags/het-woonprotest">het woonprotest,</a>
-            <a href="https://www.bnnvara.nl/tags/het-woonprotest">#woningstress</a>
-        </div>
+            <a href="https://www.bnnvara.nl/tags/het-woonprotest">#woningstress</a></p>
         
-        <button id="juichen">
-            <img src="_img/artikelpagina/juichen.png" alt="juichen">
+        <button>
+            <img src="/_img/artikelpagina/juichen.png" alt="juichen">
         </button>
     </article>
 
-<section id=comments> 
+<section class="comments"> 
     <!-- Deze krijgt van mij een ID, omdat hij anders automatisch de eerste section van de vorgina pagina pakt, dus er is verder niet echt een optie. -->
     <h2>Praat mee</h2>
     <p>Heb je een vraag, suggestie of wil je gewoon iets kwijt? Dat kan hier. Lees onze <a>spelregels.</a> </p>
 <div>
-    <img src="_img/artikelpagina/profielicoon.png" id="profielicoon" alt="profielicoon">
+    <img src="/_img/artikelpagina/profielicoon.png" alt="profielicoon">
     <textarea placeholder="Typ hier je reactie..."></textarea>
 </div>
     <button>Inloggen/registreren</button>
 </section>
-
 
 </main>
     <footer>
@@ -176,13 +176,13 @@ MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong#b
 </div>
 
 <div>
-<ul>
-    <li><a href="https://www.facebook.com/BNNVARA/"><img src="_img/socialmediaicons/facebook.png"></a></li>
-    <li><a href="https://www.instagram.com/omroepbnnvara/"><img src="_img/socialmediaicons/instagram.png"></a></li>
-    <li><a href="https://twitter.com/BNNVARA"><img src="_img/socialmediaicons/youtube.png"></a></li>
-    <li><a href="https://www.youtube.com/channel/UCbd_cIHnI1J_XcLT86NMyvQ"><img src="_img/socialmediaicons/twitter.png"></a></li>
-    <li><a href="https://www.linkedin.com/company/bnnvara/"><img src="_img/socialmediaicons/linkedin.png"></a></li>
-</ul>
+    <ul>
+        <li><a href="https://www.facebook.com/BNNVARA/"><img src="/_img/socialmediaicons/facebook.png" alt="facebook"></a></li>
+        <li><a href="https://www.instagram.com/omroepbnnvara/"><img src="/_img/socialmediaicons/instagram.png" alt="instagram"></a></li>
+        <li><a href="https://twitter.com/BNNVARA"><img src="/_img/socialmediaicons/youtube.png" alt="youtube"></a></li>
+        <li><a href="https://www.youtube.com/channel/UCbd_cIHnI1J_XcLT86NMyvQ"><img src="/_img/socialmediaicons/twitter.png" alt="twitter"></a></li>
+        <li><a href="https://www.linkedin.com/company/bnnvara/"><img src="/_img/socialmediaicons/linkedin.png" alt="linkedin"></a></li>
+    </ul>
 </div>
     </footer>
 </body>
