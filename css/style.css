@@ -22,6 +22,7 @@ h2 {
 
 p {
     font-family: 'Exo', sans-serif;
+    margin: 1.3em 0em 1.2em 0em;
 }
 
 /***************/
@@ -123,24 +124,19 @@ div div button:nth-of-type(2) {
 /*CAROUSSEL*/
 /***************/
 
-.carouselsection h2 {
-    margin:0;
-    margin-bottom: 1em;
-    color: white;
-}
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.carouselsection{
+.carouselsection {
   background: black;
   color: white;
   padding: 1rem;
   position: relative;
-  padding-bottom: 2.5em;
 }
 
 .carouselsection h2 {
@@ -148,9 +144,9 @@ div div button:nth-of-type(2) {
 }
 
 .carousel-frame {
-  height: 12.5em;
+  height: 200px;
   margin: 0 auto;
-  overflow: auto;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -158,8 +154,13 @@ div div button:nth-of-type(2) {
   display: flex;
   gap: 2.5%;
   list-style: none;
-  margin:0;
-  padding:0;
+  position: relative;
+  right: 50%;
+}
+
+.carousel.animate {
+    transform: translateX(var(--slideX));
+    transition: transform 400ms ease-in-out;
 }
 
 .carousel li {
@@ -175,11 +176,6 @@ div div button:nth-of-type(2) {
   flex-wrap: wrap;
   height: 100%;
   text-transform: none;
-  text-decoration: none;
-}
-
-.carousel li a:hover {
-    text-decoration: underline; 
 }
 
 .carousel li a img {
@@ -202,8 +198,17 @@ div div button:nth-of-type(2) {
   left: 0;
 }
 
-.carouselsection button#next {
+button#next {
   right: 0;
+}
+
+.carousel li a {
+text-transform: none;
+text-decoration: none;
+}
+
+.carousel li a:hover {
+    text-decoration: underline; 
 }
 
 @media (min-width:63.75rem){
@@ -215,10 +220,8 @@ div div button:nth-of-type(2) {
 
     .carousel li a {
         height: 75%;
-        width: 65%;
+        width: 70%;
     }
-
-    /* Hoe haal ik hier de gap weg?  */
 
     .carousel li h3 {
         width: 40%;
@@ -226,7 +229,8 @@ div div button:nth-of-type(2) {
         margin-top:1em;
         font-size:1.25em;
     }
-}
+} 
+
 
 /***************/
 /*EERSTE SECTION(SLUITJEAANBIJBNNVARA)*/
@@ -236,6 +240,10 @@ section:nth-of-type(2) img {
 width: 100%;
 margin-top: 2.5em;
 } 
+
+section:nth-of-type(2) h2 {
+    margin-top: 1.3em;
+}
 
 @media (min-width:63.75rem){
 
@@ -282,6 +290,8 @@ section:nth-of-type(2) img {
 
     section:nth-of-type(3) h2{
         margin-left: 0.8em;
+        margin-top: 1.3em;
+        margin-bottom: 1em;
     }
 
   }
@@ -609,7 +619,7 @@ color:#0645AD;
 }
 
 /***************/
-/*comments
+/*COMMENTS
 /***************/
 
 .comments img {
