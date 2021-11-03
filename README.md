@@ -36,11 +36,11 @@ https://www.bnnvara.nl/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Homepagina
-<img src="/images/fotosverslag/bnnvarahomepagina" width="375px" alt="Homepagina">
+<img src="./images/fotosverslag/bnnvarahomepagina" width="375px" alt="Homepagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Artikelpagina
-<img src="/images/fotosverslag/bnnvarawoningstressartikelpagina" width="375px" alt="artikelpagina: woningstress">
+<img src="./images/fotosverslag/bnnvarawoningstressartikelpagina" width="375px" alt="artikelpagina: woningstress">
  
 </details>
 
@@ -101,8 +101,8 @@ Ik heb deze week voornamelijk gewerkt aan het schrijven van HTML en het stylen v
 geleden dat ik gecodeerd heb, dus ik moest alles weer opzoeken. Wat wel goed ging waren de dingen
 die ik al wist van internetstandaarden, zoals: de padding en margin of (tekst)kleuren.
 
-<img src="/images/fotosverslag/htmlnavigatie" width="375px" alt="artikelpagina: woningstress">
-<img src="/images/fotosverslag/hoofdnavigatie"width="375px" alt="artikelpagina: woningstress">
+<img src="./images/fotosverslag/htmlnavigatie" width="375px" alt="artikelpagina: woningstress">
+<img src="./images/fotosverslag/hoofdnavigatie"width="375px" alt="artikelpagina: woningstress">
 
 ### Agenda voor meeting
 samen met je groepje opstellen
@@ -197,11 +197,11 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Stand van zaken
 Er waren (tijdens het voortgangsgesprek) nog een aantal dingen die ik moest oplossen voordat ik mijn mondeling gehaald heb, namelijk: 
 
-1 code schoner en netter maken
-2 body # van de tweede pagina verwijderen en de classes sections geven 
-3 Sommige classes en divjes weghalen, zodat ik ze minder heb
-4 'slide animatie' toevoegen aan de carousel 
-5 :hover en :focus gebruiken 
+1. code schoner en netter maken
+2. body # van de tweede pagina verwijderen en de classes sections geven 
+3. Sommige classes en divjes weghalen, zodat ik ze minder heb
+4. 'slide animatie' toevoegen aan de carousel 
+5. :hover en :focus gebruiken 
 
 Dit is allemaal gelukt! Jeey 
 
@@ -210,8 +210,6 @@ Dit is allemaal gelukt! Jeey
 hier screenshot(s) van je eindresultaat
 
 </details>
-
-
 
 
 
